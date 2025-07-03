@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout with Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout with Image Gallery</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+            <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <!-- Image Gallery Section -->
+    <section class="mt-8 p-4">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Image Gallery</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Image 1 -->
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Mountain landscape" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Mountain Vista</h3>
+                    <p class="text-gray-600 text-sm mt-2">Beautiful mountain landscape with clear blue skies</p>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Forest path" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Forest Trail</h3>
+                    <p class="text-gray-600 text-sm mt-2">Peaceful forest path surrounded by tall trees</p>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Ocean waves" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Ocean Waves</h3>
+                    <p class="text-gray-600 text-sm mt-2">Tranquil ocean waves meeting the sandy shore</p>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Desert landscape" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Desert Dunes</h3>
+                    <p class="text-gray-600 text-sm mt-2">Golden sand dunes under a vast desert sky</p>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="City skyline" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">City Lights</h3>
+                    <p class="text-gray-600 text-sm mt-2">Modern city skyline illuminated at night</p>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Autumn leaves" 
+                     class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Autumn Colors</h3>
+                    <p class="text-gray-600 text-sm mt-2">Vibrant autumn leaves in rich orange and red</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 ALX's Blog</p>
+    </footer>
+</body>
+</html>
