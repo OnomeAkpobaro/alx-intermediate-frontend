@@ -1,0 +1,23 @@
+Steps to install SASS on macOS:
+
+1. First, ensure you have Node.js installed. If not, install it from nodejs.org or using Homebrew:
+   brew install node
+
+2. Check Node.js version:
+   node --version
+
+3. Install SASS globally using npm:
+   npm install -g sass@3.7.4
+
+4. Verify SASS installation:
+   sass --version
+
+5. If you encounter permission issues, use sudo:
+   sudo npm install -g sass@3.7.4
+
+6. Alternative: Install SASS locally in your project directory:
+   cd /path/to/alx-intermediate-frontend/0x03-sass_scss
+   npm install sass@3.7.4
+
+7. To use local installation, run SASS with npx:
+   npx sass input.scss output.css
